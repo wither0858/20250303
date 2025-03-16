@@ -25,7 +25,7 @@ function setup() {
   dropdown.position(button.x + button.width + 20, 15); // set position of dropdown
   dropdown.option('淡江大學');
   dropdown.option('教育科技學系');
-  dropdown.option('第三周');
+  dropdown.option('測驗卷');
   dropdown.style('font-size', '30px'); // set font size of dropdown
   dropdown.size(200, 50); // set size of dropdown
   dropdown.changed(goToLink); // set dropdown change event
@@ -67,8 +67,8 @@ function goToLink() {
     iframe.attribute('src', 'https://www.tku.edu.tw'); // 在iframe中嵌入網址
   } else if (selected === '教育科技學系') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw'); // 在iframe中嵌入網址
-  } else if (selected === '第三周') {
-    iframe.attribute('src', 'https://hackmd.io/@yljBsqXlRrKGO44yTylRTg/rk4QTmsi1l'); // 在iframe中嵌入網址
+  } else if (selected === '測驗卷') {
+    iframe.attribute('src', 'https://wither0858.github.io/20250310/'); // 在iframe中嵌入網址
   }
 }
 
